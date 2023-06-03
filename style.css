@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+  padding: 0;
+  background-color: rgb(26, 25, 25);
+  color: wheat;
+}
+
+.app {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading{
+  display: flex;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+}
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 30px;
+}
+
+#addTitle {
+  background-color: rgb(26, 25, 25);
+  color: wheat;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 5px;
+  padding: 5px;
+  height: 50px;
+  border: 0px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#addText {
+  background-color: rgb(26, 25, 25);
+  color: wheat;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 5px;
+  padding: 5px;
+  height: 200px;
+  border: 0px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#addBtn {
+  width: 70px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(26, 25, 25);
+  color: gray;
+  border: 2px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#addBtn:hover {
+  color: wheat;
+  border-color: wheat;
+}
+
+.container-2 {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 30px;
+}
+
+.note-container {
+  border: 5px solid gray;
+  border-radius: 10px;
+  width: 340px;
+  /* height: 250px; */
+  padding: 10px;
+  margin: 20px;
+}
+.note-container:hover{
+  border-color: wheat;
+}
+.note-container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  color: gray;
+  font-weight: 900;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.note-container p {
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 18px;
+  color: rgb(158, 157, 157);
+  letter-spacing: 2px;
+}
+.note-container:hover h2 {
+  color: wheat;
+}
+.note-container:hover p {
+  color: wheat;
+}
+.delete-edit {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.delete-button,
+.edit-button {
+  width: 70px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(26, 25, 25);
+  color: gray;
+  border: 2px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.note-container:hover .delete-button {
+  border-color: red;
+  color: red;
+}
+.note-container:hover .edit-button {
+  border-color: green;
+  color: green;
+}
+.no-border {
+  border: none;
+}
+.border {
+  border: 5px solid rgb(219, 170, 44);
+}
