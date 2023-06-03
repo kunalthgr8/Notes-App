@@ -92,4 +92,23 @@ function editNote(index) {
   }
 }
 
+let search = document.getElementById("search-input");
+search.addEventListener("input", function () {
+  let noteCards = document.getElementsByClassName("note-container");
+  Array.from(noteCards).forEach(function (element) {
+    let cardTxt = element.getElementsByTagName("p")[0].innerText.toLowerCase();
+    let cardTitle = element
+      .getElementsByTagName("h2")[0]
+      .innerText.toLowerCase();
+    if (
+      cardTxt.includes(search.value.toLowerCase()) ||
+      cardTitle.includes(search.value.toLowerCase())
+    ) {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});
+
 showNotes();
